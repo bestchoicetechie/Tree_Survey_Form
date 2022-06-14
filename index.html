@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form_container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+            </div>
+            <div>
+                <div class="heading">
+                    <h2>Tree Survey Form</h2>
+                    <p>A Survey Form On The Health Of The Environment</p>
+                </div>
+                <form action="/">
+                    <div>
+                        <label class="block" for="name">Name:</label>
+                        <input class="block" type="text" name="name" id="name" placeholder="Enter your name here e.g Awe John" required/>
+                    </div>
+                    <div>
+                        <label class="block" for="email">Email</label>
+                        <input class="block" type="email" name="email" id="email" placeholder="abc@examplemail.com" required/>
+                    </div>
+                    <div>
+                        <label class="block" for="age">Age (Optional)</label>
+                        <input class="block" type="number" name="age" id="age" min="15" max="40" placeholder="Enter your age" required/>
+                    </div>
+                    <div>
+                        <!-- <label for="country"></label> -->
+                        <h3>Select Continent of residence</h3>
+                        <select class="block" name="country" id="country" required>
+                            <option value="europe">	Europe</option>
+                            <option value="africa">Africa</option>
+                            <option value="asia">Asia</option>
+                            <option value="autralia">autralia</option>
+                            <option value="southAm">South America</option>
+                            <option value="northAm">North America</option>
+                            <option value="antarctica">Antarctica</option>
+                        </select>
+                    </div>
+                    <div class="radio" style="padding: 50px 10px;" >
+                        <h3>Choose your preferred gender </h3>
+                        <div>
+                            <input type="radio" name="gender" id="male" />
+                        <label for="male">Male</label><br>
+                        <input type="radio"  name="gender" id="female" />
+                        <label for="female">Female</label><br>
+                        <input type="radio" name="gender" id="other" />
+                        <label for="other">Other</label>
+                        </div>
+                    </div>
+                    <div class="checkbox" style="padding: 50px 10px;" >
+                        <h3>Please select atleast one of the options below</h3>
+                        <div>
+                            <input type="checkbox" name="planted" id="planted"  />
+                            <label for="planted">I have planted a tree or any other tree</label><br>
+                            <input type="checkbox" name="takepart" id="takepart" />
+                            <label for="takepart">I take part in community service environment</label><br>
+                            <input type="checkbox" name="promise" id="promise" />
+                            <label for="promise">I promise to plant more tree from today onward</label>
+                        </div>
+          
+                    </div>
+                    <div>
+                        <h3>Any Comment or Suggestion</h3>
+                        <div>
+                            <textarea name="commentt" id="comment" cols="20" rows="10" maxlength="200" placeholder="Comments/Suggestions"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn block" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
